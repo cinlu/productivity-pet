@@ -2,6 +2,7 @@ import React from "react"
 
 function TodoForm() {
     const[task, setTask] = React.useState("")
+    const[taskList, setTaskList] = React.useState([])
 
     function handleChange(event) {
         setTask(event.target.value)
@@ -9,7 +10,9 @@ function TodoForm() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(task)
+        setTaskList([...taskList, task])
+        setTask("")
+        console.log(taskList)
     }
 
     return (
