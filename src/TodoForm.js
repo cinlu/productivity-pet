@@ -3,14 +3,17 @@ import React from "react"
 function TodoForm() {
     const[task, setTask] = React.useState("")
 
-    console.log(task)
-
     function handleChange(event) {
         setTask(event.target.value)
     }
 
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(task)
+    }
+
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
             type="text"
             placeholder="Let's Get Some Work Done!"
@@ -18,6 +21,7 @@ function TodoForm() {
             name="task"
             value={task}
         />
+        <button>Add</button>
       </form>
     );
   }
