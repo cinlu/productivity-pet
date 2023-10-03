@@ -19,7 +19,7 @@ function Todolist() {
   } 
 
     return (
-      <div className="Todo-list">
+      <div >
         <TodoForm addTask={addTask}/>
         <Todos taskList={taskList} removeTask={removeTask}/>
       </div>

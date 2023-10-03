@@ -5,7 +5,7 @@ import Todo from './Todo';
 function Todos({taskList, removeTask}) {
     return (
       <ul>
-        {taskList.length === 0 && "No Todos"}
+        {taskList.length === 0 && ""}
         
         {taskList.map(todo => {
           return (
