@@ -1,11 +1,20 @@
+import { useEffect, useState } from 'react';
 import './Todo.css';
-import React from 'react';
 
 function Todo({id, taskItem, removeTask}) {
+  const[clicked, setClicked] = useState(false)
+
+  //only runs after the Todo component is rendered :D
+  useEffect(() => {
+    if (clicked) {
+      removeTask(id)
+    }
+  })
+
     return (
-        // <li onDoubleClick={removeTask(id)}>
+        <li onDoubleClick={() => setClicked(true)}>
         
-        <li >
+        {/* <li > */}
         {taskItem}
       </li>
     );
