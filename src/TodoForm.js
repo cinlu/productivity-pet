@@ -1,3 +1,4 @@
+import './TodoForm.css';
 import React from "react"
 
 function TodoForm({addTask}) {
@@ -28,6 +29,7 @@ function TodoForm({addTask}) {
             name="task"
             value={task}
         />
+        <br/> 
         <button>Add</button>
       </form>
     );
