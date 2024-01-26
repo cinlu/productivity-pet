@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/productivity-pet/static/css/main.38f94bdf.css",
+    "main.js": "/productivity-pet/static/js/main.860c617d.js",
+    "static/media/cat.png": "/productivity-pet/static/media/cat.e06ca109fb4d80968ec1.png",
+    "index.html": "/productivity-pet/index.html",
+    "main.38f94bdf.css.map": "/productivity-pet/static/css/main.38f94bdf.css.map",
+    "main.860c617d.js.map": "/productivity-pet/static/js/main.860c617d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38f94bdf.css",
+    "static/js/main.860c617d.js"
+  ]
+}
