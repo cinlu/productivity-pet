@@ -2,7 +2,7 @@
 This is a web app created with React JS that allows for task management. 
 Users can add tasks, delete tasks, and save to local storage. 
 
-UseEffect, UseState, Local Storage, React Forms
+Deployed to Github pages: https://cinlu.github.io/productivity-pet/
 
 # Intstructions 
 1. npm start to run on http://localhost:3000/
